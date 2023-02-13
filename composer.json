@@ -1,0 +1,14 @@
+{
+	"name": "blogkit/theme",
+	"description": "",
+	"type": "project",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+			"phpcs --config-set default_standard WordPress"
+		]
+	}
+}
